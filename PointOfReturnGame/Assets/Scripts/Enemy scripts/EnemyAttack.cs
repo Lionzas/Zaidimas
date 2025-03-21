@@ -9,7 +9,7 @@ public class EnemyAttack : MonoBehaviour
 
 
     private Transform player;
-    private EnemyMovement enemyMovement;
+    private EnemyController enemyController;
     private Rigidbody2D rb;
 
     private enum AttackState { Ready, AttackDelay, Cooldown }
@@ -20,7 +20,7 @@ public class EnemyAttack : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
-        enemyMovement = GetComponent<EnemyMovement>();
+        enemyController = GetComponent<EnemyController>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -37,9 +37,9 @@ public class EnemyAttack : MonoBehaviour
                     state = AttackState.AttackDelay;
                     timer = attackDelay;
                     
-                    if (enemyMovement != null)
+                    if (enemyController != null)
                     {
-                        enemyMovement.enabled = false;
+                        enemyController.enabled = false;
                     }
                     rb.linearVelocity = Vector2.zero;
                 }
@@ -61,8 +61,8 @@ public class EnemyAttack : MonoBehaviour
                     state = AttackState.Cooldown;
                     timer = attackCooldown;
                     
-                    if (enemyMovement != null)
-                        enemyMovement.enabled = true;
+                    if (enemyController != null)
+                        enemyController.enabled = true;
                 }
                 break;
 

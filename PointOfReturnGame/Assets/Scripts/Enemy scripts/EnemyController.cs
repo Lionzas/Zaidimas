@@ -1,18 +1,22 @@
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     [SerializeField] float speed;
 
     private Rigidbody2D rb;
     private PlayerAwarenessController playerAwareness;
     private Vector2 targetDirection;
+
     
+    [SerializeField] float maxHealth = 10f;
+    [SerializeField] float health = 0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerAwareness = GetComponent<PlayerAwarenessController>();
+        health = maxHealth;
     }
 
 
@@ -45,6 +49,16 @@ public class EnemyMovement : MonoBehaviour
         else
         {
             rb.linearVelocity = targetDirection * speed;
+        }
+    }
+
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if(health <=0)
+        {
+            Destroy(gameObject);
         }
     }
 }
