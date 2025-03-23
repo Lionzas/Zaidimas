@@ -9,7 +9,6 @@ public class Weapon : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            // Now safely get the EnemyController component
             EnemyController enemy = other.GetComponent<EnemyController>();
             if (enemy != null)
             {
