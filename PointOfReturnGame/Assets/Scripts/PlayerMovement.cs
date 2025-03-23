@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Vector2 movementDirection;
     Animator anim;
+    public Transform Aim;
 
 
     void Start()
@@ -13,28 +14,38 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
+    
 
     void Update()
     {
         movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        MovementAnimation();
+
+        if (movementDirection != Vector2.zero)
+        {
+            float angle = Mathf.Atan2(movementDirection.y, movementDirection.x) * Mathf.Rad2Deg;
+            Aim.rotation = Quaternion.AngleAxis(angle+90f, Vector3.forward);
+        }
     }
 
-    void FixedUpdate() 
+
+    void FixedUpdate()
     {
         rb.linearVelocity = movementDirection.normalized * movementSpeed;
-        MovementAnimation();
     }
 
 
     void MovementAnimation()
     {
-        if (rb.linearVelocity.magnitude != 0)
+        if (movementDirection != Vector2.zero)
         {
             anim.SetFloat("MoveX", movementDirection.x);
             anim.SetFloat("MoveY", movementDirection.y);
             anim.SetBool("Walking", true);
         }
         else
+        {
             anim.SetBool("Walking", false);
+        }
     }
 }
