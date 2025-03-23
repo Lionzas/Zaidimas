@@ -4,11 +4,11 @@
 - Active scene:
   - Name: GameScreen
   - Tags:
-    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Enemy
+    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, GameMusic, Enemy
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI
 - Active game object:
-  - Name: Spear
-  - Tag: Untagged
+  - Name: TestPlayer
+  - Tag: Player
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
