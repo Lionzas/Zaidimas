@@ -2,82 +2,111 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public GameObject Knife;
-    public GameObject Spear;
-    bool isAttacking = false;
-    [SerializeField] float knifeAttackDuration = 0.3f;
-    [SerializeField] float knifeAttackTimer = 0f;
+    public GameObject KnifeAnimation;
+    public GameObject SpearAnimation;
 
+    public GameObject KnifeHitbox;
+    public GameObject SpearHitbox;
+
+
+    private enum WeaponType { None, Knife, Spear }
+    private WeaponType currentWeapon = WeaponType.None;
+
+
+    bool isAttacking = false;
+    float attackTimer = 0f;
+
+
+    [SerializeField] float knifeAttackDuration = 0.3f;
     [SerializeField] float spearAttackDuration = 0.5f;
-    [SerializeField] float spearAttackTimer = 1f;
 
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            CheckKnifeTimer();
-        
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                KnifeAttack();
-            }
+            currentWeapon = WeaponType.None;
+            DisableAllObjects();
+            Debug.Log("Unequipped weapon");
         }
-        
-        if(Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            CheckSpearTimer();
-        
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                SpearAttack();
-            }
+            currentWeapon = WeaponType.Knife;
+            Debug.Log("Equipped Knife");
         }
-    }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            currentWeapon = WeaponType.Spear;
+            Debug.Log("Equipped Spear");
+        }
 
-    void KnifeAttack()
-    {
-        if(!isAttacking)
+        if (Input.GetKeyDown(KeyCode.E) && !isAttacking && currentWeapon != WeaponType.None)
         {
-            Knife.SetActive(true);
-            isAttacking = true;
+            StartAttack();
         }
-    }
 
-    void CheckKnifeTimer()
-    {
-        if(isAttacking)
+        if (isAttacking)
         {
-            knifeAttackTimer += Time.deltaTime;
-            if(knifeAttackTimer >= knifeAttackDuration)
+            attackTimer += Time.deltaTime;
+            float currentDuration = (currentWeapon == WeaponType.Knife) ? knifeAttackDuration : spearAttackDuration;
+            if (attackTimer >= currentDuration)
             {
-                knifeAttackTimer = 0;
-                isAttacking = false;
-                Knife.SetActive(false);
+                EndAttack();
             }
         }
     }
 
-    void SpearAttack()
+
+    void StartAttack()
     {
-        if(!isAttacking)
+        isAttacking = true;
+        attackTimer = 0f;
+
+        DisableAllObjects();
+
+        if (currentWeapon == WeaponType.Knife)
         {
-            Spear.SetActive(true);
-            isAttacking = true;
+            if (KnifeAnimation != null)
+                KnifeAnimation.SetActive(true);
+            if (KnifeHitbox != null)
+                KnifeHitbox.SetActive(true);
+        }
+        else if (currentWeapon == WeaponType.Spear)
+        {
+            if (SpearAnimation != null)
+                SpearAnimation.SetActive(true);
+            if (SpearHitbox != null)
+                SpearHitbox.SetActive(true);
         }
     }
 
-    void CheckSpearTimer()
+
+    void EndAttack()
     {
-        if(isAttacking)
+        isAttacking = false;
+        attackTimer = 0f;
+        DisableAllObjects();
+    }
+
+
+    void DisableAllObjects()
+    {
+        if (KnifeAnimation != null)
         {
-            spearAttackTimer += Time.deltaTime;
-            if(spearAttackTimer >= spearAttackDuration)
-            {
-                spearAttackTimer = 0;
-                isAttacking = false;
-                Spear.SetActive(false);
-            }
+            KnifeAnimation.SetActive(false);
+        }
+        if (SpearAnimation != null)
+        {
+            SpearAnimation.SetActive(false);         
+        }
+        if (KnifeHitbox != null)
+        {
+            KnifeHitbox.SetActive(false);
+        }
+
+        if (SpearHitbox != null)
+        {
+            SpearHitbox.SetActive(false);
         }
     }
 }
