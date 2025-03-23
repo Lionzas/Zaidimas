@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
 
     private enum WeaponType { None, Knife, Spear }
     private WeaponType currentWeapon = WeaponType.None;
+    [SerializeField] private AudioSource m_knifeSound;
+    [SerializeField] private AudioSource m_spearSound;
 
 
     bool isAttacking = false;
@@ -42,6 +44,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && !isAttacking && currentWeapon != WeaponType.None)
         {
+
             StartAttack();
         }
 
@@ -63,16 +66,19 @@ public class PlayerAttack : MonoBehaviour
         attackTimer = 0f;
 
         DisableAllObjects();
-
         if (currentWeapon == WeaponType.Knife)
         {
             if (KnifeAnimation != null)
+            {
+                m_knifeSound.Play();
                 KnifeAnimation.SetActive(true);
+            }
             if (KnifeHitbox != null)
                 KnifeHitbox.SetActive(true);
         }
         else if (currentWeapon == WeaponType.Spear)
         {
+            m_spearSound.Play();
             if (SpearAnimation != null)
                 SpearAnimation.SetActive(true);
             if (SpearHitbox != null)
