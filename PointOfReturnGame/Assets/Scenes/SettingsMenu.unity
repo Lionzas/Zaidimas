@@ -1317,9 +1317,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1384875665}
-        m_TargetAssemblyTypeName: AudioSlider, Assembly-CSharp
-        m_MethodName: OnChangeSlider
-        m_Mode: 0
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: ChangeVolume
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1337,11 +1337,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1384875662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 473ff29fbfe96924ebc6835ce20c8a01, type: 3}
+  m_Script: {fileID: 11500000, guid: e2fb5ac507fd3d64d8f300e4b0f6facd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: a53e8c9163b55be42ba239581e64dea7, type: 2}
-  valueText: {fileID: 211788596}
+  _sliderText: {fileID: 211788596}
+  volumeSlider: {fileID: 1384875664}
 --- !u!1 &1537257828
 GameObject:
   m_ObjectHideFlags: 0
