@@ -1,4 +1,7 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 public class EnemyController : MonoBehaviour
 {
@@ -7,7 +10,8 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerAwarenessController playerAwareness;
     private Vector2 targetDirection;
-    Animator anim;
+    private SpriteRenderer renderer;
+    private Animator anim;
 
 
     [SerializeField] float maxHealth = 10f;
@@ -18,6 +22,7 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         playerAwareness = GetComponent<PlayerAwarenessController>();
         health = maxHealth;
+        renderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
 
@@ -63,6 +68,18 @@ public class EnemyController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else
+        {
+            rb.AddForce(targetDirection.normalized * -100f * damage);
+            StartCoroutine("ChangeColor");
+        }
+    }
+
+    IEnumerator ChangeColor()
+    {
+        renderer.material.SetColor("_Color", Color.red);
+        yield return new WaitForSeconds(0.3f);
+        renderer.material.SetColor("_Color", Color.white);
     }
 
     void MovementAnimation()

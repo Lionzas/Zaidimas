@@ -1753,7 +1753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  maxHealth: 10
+  maxHealth: 30
   health: 0
 --- !u!61 &679062102
 BoxCollider2D:
