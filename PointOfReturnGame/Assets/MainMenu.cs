@@ -6,12 +6,12 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private AudioSource m_clicksound;
+    [SerializeField] public Animator transition;
     public void PlayGame()
     {
         m_clicksound.Play();
         DontDestroyOnLoad(this.m_clicksound);
-        SceneManager.LoadScene("GameScreen");
-        
+        StartCoroutine(LoadLevel("GameScreen"));
     }
     public void QuitGame()
     {
@@ -24,12 +24,20 @@ public class MainMenu : MonoBehaviour
     {
         m_clicksound.Play();
         DontDestroyOnLoad(this.m_clicksound);
-        SceneManager.LoadScene("MainMenu");
+        StartCoroutine(LoadLevel("MainMenu"));
     }
     public void GoToSettingsMenu()
     {
         m_clicksound.Play();
         DontDestroyOnLoad(this.m_clicksound);
-        SceneManager.LoadScene("SettingsMenu");
+        StartCoroutine (LoadLevel("SettingsMenu"));
+    }
+    private IEnumerator LoadLevel(string name)
+    {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(name);
     }
 }
