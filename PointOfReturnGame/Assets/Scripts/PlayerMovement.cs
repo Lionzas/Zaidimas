@@ -48,4 +48,13 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("Walking", false);
         }
     }
+
+    public void UseAnimation()
+    {
+        //anim.SetFloat("MoveX", movementDirection.x);
+        //anim.SetFloat("MoveY", movementDirection.y);
+        //anim.SetBool("Using", true);
+        //anim.Play("Use Tree", 0, 0.0f);
+        anim.SetTrigger("Using");
+    }
 }

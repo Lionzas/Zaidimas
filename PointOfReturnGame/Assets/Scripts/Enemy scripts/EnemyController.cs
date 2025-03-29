@@ -101,4 +101,9 @@ public class EnemyController : MonoBehaviour
         else
             anim.SetBool("Walking", false);
     }
+
+    public void AttackAnimation()
+    {
+        anim.SetTrigger("Attack");
+    }
 }
