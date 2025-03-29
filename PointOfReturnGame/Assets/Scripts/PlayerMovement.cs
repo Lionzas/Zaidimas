@@ -7,12 +7,14 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movementDirection;
     Animator anim;
     public Transform Aim;
+    public VectorValue startingPosition;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        transform.position = startingPosition.initialValue;
     }
     
 
