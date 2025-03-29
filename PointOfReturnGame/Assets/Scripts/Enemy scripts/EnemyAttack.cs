@@ -54,6 +54,7 @@ public class EnemyAttack : MonoBehaviour
                         PlayerProfile playerProfile = player.GetComponent<PlayerProfile>();
                         if (playerProfile != null)
                         {
+                            enemyController.AttackAnimation();
                             playerProfile.ReduceHealth(attackDamage);
                         }
                     }

@@ -44,7 +44,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && !isAttacking && currentWeapon != WeaponType.None)
         {
-
+            this.GetComponent<PlayerMovement>().UseAnimation();
             StartAttack();
         }
 

@@ -19,6 +19,7 @@ public class Interactor : MonoBehaviour
             prompt.SetText(interactable.InteractionPrompt);
             if (interactable != null && Input.GetKeyDown(KeyCode.F))
             {
+                this.GetComponent<PlayerMovement>().UseAnimation();
                 interactable.Interact(this);
             }
         }
