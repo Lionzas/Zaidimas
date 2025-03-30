@@ -321,7 +321,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
+  movementSound: {fileID: 0}
   Aim: {fileID: 2504364692958477953}
+  startingPosition: {fileID: 11400000, guid: ea9599d96c37c6c4b8ffe3b5b601de58, type: 2}
 --- !u!114 &820100980673985061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,6 +357,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthbar: {fileID: 0}
+  playerHealth: {fileID: 11400000, guid: d224f8e7d9fd62d48a453959f412bb7a, type: 2}
 --- !u!114 &1895370259687661771
 MonoBehaviour:
   m_ObjectHideFlags: 0

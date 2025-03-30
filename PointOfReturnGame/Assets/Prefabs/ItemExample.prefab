@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8806662074196910978
+--- !u!1 &6553913112309815817
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8677560622180908255}
-  - component: {fileID: 4904592154246222567}
-  - component: {fileID: 4461741656346524995}
-  - component: {fileID: 7650525774340297632}
-  - component: {fileID: 2413125134573346505}
-  - component: {fileID: 6563404202614720618}
+  - component: {fileID: 888519472298810499}
+  - component: {fileID: 6415091393507635865}
+  - component: {fileID: 1617909405176310017}
+  - component: {fileID: 4681804632272653053}
+  - component: {fileID: 8636178409188418906}
+  - component: {fileID: 3461011768767408898}
   m_Layer: 6
-  m_Name: DoorExample
+  m_Name: ItemExample
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8677560622180908255
+--- !u!4 &888519472298810499
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8806662074196910978}
+  m_GameObject: {fileID: 6553913112309815817}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.06, y: -1.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7.47, y: -0.41, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4904592154246222567
+--- !u!212 &6415091393507635865
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8806662074196910978}
+  m_GameObject: {fileID: 6553913112309815817}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -91,29 +91,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4461741656346524995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8806662074196910978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa539957aab49664cbe5cdec900b8990, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: (F) Open Door
-  sceneBuildIndex: 3
-  playerPosition: {x: -2, y: 3}
-  playerStorage: {fileID: 11400000, guid: ea9599d96c37c6c4b8ffe3b5b601de58, type: 2}
---- !u!61 &7650525774340297632
+--- !u!61 &1617909405176310017
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8806662074196910978}
+  m_GameObject: {fileID: 6553913112309815817}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -153,13 +137,13 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!61 &2413125134573346505
+--- !u!61 &4681804632272653053
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8806662074196910978}
+  m_GameObject: {fileID: 6553913112309815817}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -199,13 +183,27 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6563404202614720618
+--- !u!114 &8636178409188418906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8806662074196910978}
+  m_GameObject: {fileID: 6553913112309815817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362de0a0a0f302844bb149c2f3d7a6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: (F) Pick Up Item
+  m_clicksound: {fileID: 0}
+--- !u!114 &3461011768767408898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553913112309815817}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa18779a6d3a62044b908de2501b3427, type: 3}
@@ -214,6 +212,6 @@ MonoBehaviour:
   popUpBox: {fileID: 0}
   popUpText: {fileID: 0}
   text:
-  - This is a door
+  - This is an item
   wordSpeed: 0.06
   playerIsClose: 0
