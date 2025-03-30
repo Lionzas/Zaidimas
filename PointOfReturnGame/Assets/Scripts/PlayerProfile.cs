@@ -7,10 +7,21 @@ public class PlayerProfile : MonoBehaviour
     public int currentHealth;
     [SerializeField] DisplayHealth healthbar;
     private SpriteRenderer renderer;
+    public PlayerHealth playerHealth;
 
     void Start()
     {
-        currentHealth = maxHealth;
+        /*currentHealth = maxHealth;
+        playerHealth.initialHealth = currentHealth;*/
+        if(playerHealth.initialHealth < maxHealth && playerHealth.initialHealth > 0)
+        {
+            currentHealth = (int)playerHealth.initialHealth;
+        }
+        else
+        {
+            currentHealth = maxHealth;
+            playerHealth.initialHealth = currentHealth;
+        }
         healthbar.SetHealth(currentHealth, maxHealth);
         renderer = GetComponent<SpriteRenderer>();
     }
@@ -30,6 +41,7 @@ public class PlayerProfile : MonoBehaviour
     public void ReduceHealth(int amount)
     {
         currentHealth = Mathf.Max(currentHealth - amount, 0);
+        playerHealth.initialHealth = currentHealth;
         healthbar.SetHealth(currentHealth, maxHealth);
         StartCoroutine("ChangeColor");
     }
@@ -44,6 +56,7 @@ public class PlayerProfile : MonoBehaviour
     public void RestoreHealth(int amount)
     {
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+        playerHealth.initialHealth = currentHealth;
         healthbar.SetHealth(currentHealth, maxHealth);
     }
 }
