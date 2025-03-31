@@ -182,6 +182,37 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 2265934091383277413, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
   m_PrefabInstance: {fileID: 6923593745482544463}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &268714160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268714161}
+  m_Layer: 0
+  m_Name: RespawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268714161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268714160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.73, y: -0.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &374142827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7794973909044900579, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
@@ -1969,6 +2000,10 @@ PrefabInstance:
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 103938578}
+    - target: {fileID: 7440279949535084951, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 268714161}
     - target: {fileID: 7794973909044900579, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.73
@@ -2315,3 +2350,4 @@ SceneRoots:
   - {fileID: 6923593745482544463}
   - {fileID: 1421111165130878063}
   - {fileID: 8021172089937736618}
+  - {fileID: 268714161}

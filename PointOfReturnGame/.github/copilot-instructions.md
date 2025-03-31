@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI, Interactable
 - Active game object:
-  - Name: DoorExample
-  - Tag: Untagged
-  - Layer: Interactable
+  - Name: TestPlayer
+  - Tag: Player
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
