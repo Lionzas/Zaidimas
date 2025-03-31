@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerProfile : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerProfile : MonoBehaviour
     [SerializeField] DisplayHealth healthbar;
     private SpriteRenderer renderer;
     public PlayerHealth playerHealth;
+    public Transform respawnPoint;
+
 
     void Start()
     {
@@ -36,6 +39,11 @@ public class PlayerProfile : MonoBehaviour
         {
             RestoreHealth(15);
         }
+        if(currentHealth <= 0)
+        {
+            RespawnPoint();
+            //ReloadScene();
+        }
     }
 
     public void ReduceHealth(int amount)
@@ -58,5 +66,21 @@ public class PlayerProfile : MonoBehaviour
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
         playerHealth.initialHealth = currentHealth;
         healthbar.SetHealth(currentHealth, maxHealth);
+    }
+
+
+    public void RespawnPoint()
+    {
+        gameObject.transform.position = respawnPoint.position;
+        currentHealth = maxHealth;
+        playerHealth.initialHealth = maxHealth;
+        healthbar.SetHealth(currentHealth, maxHealth);
+    }
+
+
+    public void ReloadScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
