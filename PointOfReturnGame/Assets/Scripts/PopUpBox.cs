@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class PopUpBox : MonoBehaviour
 {
-    public GameObject popUpBox;
+    public GameObject popUpPanel;
     public TMP_Text popUpText;
     public string[] text;
     private int index;
@@ -21,17 +21,17 @@ public class PopUpBox : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
-            if(popUpBox.activeInHierarchy)
+            if(popUpPanel.activeInHierarchy)
             {
                 ZeroText();
             }
             else
             {
-                popUpBox.SetActive(true);
+                popUpPanel.SetActive(true);
                 StartCoroutine(Typing());
             }
         }
-        if (Input.GetKeyDown(KeyCode.Return) && popUpBox.activeInHierarchy)
+        if (Input.GetKeyDown(KeyCode.Return) && popUpPanel.activeInHierarchy)
         {
             ZeroText();
         }
@@ -42,7 +42,7 @@ public class PopUpBox : MonoBehaviour
     {
         popUpText.text = "";
         index = 0;
-        popUpBox.SetActive(false);
+        popUpPanel.SetActive(false);
     }
 
 

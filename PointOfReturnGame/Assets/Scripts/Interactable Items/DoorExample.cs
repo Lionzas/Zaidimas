@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,7 +15,6 @@ public class DoorExample : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-
         Debug.Log("Opening door");
         LoadScene();
         return true;

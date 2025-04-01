@@ -209,6 +209,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4461741656346524995, guid: 2b7bd1cb9d59b7547be86ac833865f38, type: 3}
+      propertyPath: popUpText
+      value: 
+      objectReference: {fileID: 1441872463}
+    - target: {fileID: 4461741656346524995, guid: 2b7bd1cb9d59b7547be86ac833865f38, type: 3}
+      propertyPath: popUpPanel
+      value: 
+      objectReference: {fileID: 1441872464}
+    - target: {fileID: 4461741656346524995, guid: 2b7bd1cb9d59b7547be86ac833865f38, type: 3}
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: ea9599d96c37c6c4b8ffe3b5b601de58, type: 2}
