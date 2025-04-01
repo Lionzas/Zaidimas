@@ -7,7 +7,7 @@ public class PlayerProfile : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     [SerializeField] DisplayHealth healthbar;
-    private SpriteRenderer renderer;
+    //private SpriteRenderer renderer;
     public PlayerHealth playerHealth;
     public Transform respawnPoint;
 
@@ -26,7 +26,7 @@ public class PlayerProfile : MonoBehaviour
             playerHealth.initialHealth = currentHealth;
         }
         healthbar.SetHealth(currentHealth, maxHealth);
-        renderer = GetComponent<SpriteRenderer>();
+        //renderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -56,9 +56,9 @@ public class PlayerProfile : MonoBehaviour
 
     IEnumerator ChangeColor()
     {
-        renderer.material.SetColor("_Color", Color.red);
+        GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
         yield return new WaitForSeconds(0.3f);
-        renderer.material.SetColor("_Color", Color.white);
+        GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.white);
     }
 
     public void RestoreHealth(int amount)

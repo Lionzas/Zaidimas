@@ -49,12 +49,12 @@ public class EnemyAttack : MonoBehaviour
                 timer -= Time.deltaTime;
                 if (timer <= 0f)
                 {
+                    enemyController.AttackAnimation();
                     if (distance <= attackRange)
                     {
                         PlayerProfile playerProfile = player.GetComponent<PlayerProfile>();
                         if (playerProfile != null)
                         {
-                            enemyController.AttackAnimation();
                             playerProfile.ReduceHealth(attackDamage);
                         }
                     }
