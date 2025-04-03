@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
     private Vector2 targetDirection;
     private SpriteRenderer renderer;
     private Animator anim;
+    [SerializeField] private AudioSource hitSound;
 
 
     [SerializeField] float maxHealth = 10f;
@@ -70,6 +71,8 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            hitSound.Play();
+            DontDestroyOnLoad(this.hitSound);
             rb.AddForce(targetDirection.normalized * -100f * damage);
             StartCoroutine("ChangeColor");
         }
