@@ -10,6 +10,7 @@ public class PlayerProfile : MonoBehaviour
     //private SpriteRenderer renderer;
     public PlayerHealth playerHealth;
     public Transform respawnPoint;
+    [SerializeField] private AudioSource hitSound;
 
 
     void Start()
@@ -56,6 +57,8 @@ public class PlayerProfile : MonoBehaviour
 
     IEnumerator ChangeColor()
     {
+        hitSound.Play();
+        DontDestroyOnLoad(this.hitSound);
         GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
         yield return new WaitForSeconds(0.3f);
         GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.white);
