@@ -17,6 +17,7 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] float maxHealth = 10f;
     [SerializeField] float health = 0f;
+    private bool isDying = false;
 
     void Start()
     {
@@ -51,7 +52,7 @@ public class EnemyController : MonoBehaviour
 
     private void SetVelocity()
     {
-        if (targetDirection == Vector2.zero)
+        if (targetDirection == Vector2.zero || isDying)
         {
             rb.linearVelocity = Vector2.zero;
         }
@@ -65,9 +66,9 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
-        if (health <= 0)
+        if (health <= 0 && !isDying)
         {
-            Destroy(gameObject);
+            StartCoroutine("DeathEffect");
         }
         else
         {
@@ -83,6 +84,23 @@ public class EnemyController : MonoBehaviour
         renderer.material.SetColor("_Color", Color.red);
         yield return new WaitForSeconds(0.3f);
         renderer.material.SetColor("_Color", Color.white);
+    }
+
+    IEnumerator DeathEffect()
+    {
+        isDying = true;
+        GetComponent<EnemyAttack>().enabled = false;
+        float currentTime = 0;
+        while (currentTime < 0.5f)
+        {
+            renderer.material.SetColor("_Color", Color.red);
+            transform.rotation = Quaternion.Euler(currentTime / 0.5f * -90, transform.rotation.y, transform.rotation.z);
+            //transform.rotation *= Quaternion.AngleAxis(-45 * Time.deltaTime, transform.right);
+            currentTime += Time.deltaTime;
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.4f);
+        Destroy(gameObject);
     }
 
     void MovementAnimation()
