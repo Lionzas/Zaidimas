@@ -1,0 +1,770 @@
+fileFormatVersion: 2
+guid: 43adf2cf4f637a3408eb00cf9617b0f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8627368678555976251
+    second: TimeMachine_0
+  - first:
+      213: -4219227340698045808
+    second: TimeMachine_1
+  - first:
+      213: -699987698145249859
+    second: TimeMachine_2
+  - first:
+      213: 5698526154547004796
+    second: TimeMachine_3
+  - first:
+      213: 8489079102723322060
+    second: TimeMachine_4
+  - first:
+      213: -2680604036606808394
+    second: TimeMachine_5
+  - first:
+      213: -6839807011310861658
+    second: TimeMachine_6
+  - first:
+      213: 7196794790150531425
+    second: TimeMachine_7
+  - first:
+      213: 8659303338710416730
+    second: TimeMachine_8
+  - first:
+      213: -423373178259891636
+    second: TimeMachine_9
+  - first:
+      213: 3298418299366638949
+    second: TimeMachine_10
+  - first:
+      213: -7126051836906885116
+    second: TimeMachine_11
+  - first:
+      213: -177857635982069544
+    second: TimeMachine_12
+  - first:
+      213: 3712266081913683068
+    second: TimeMachine_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TimeMachine_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092b31b861b4275c0800000000000000
+      internalID: -4219227340698045808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5b8e0b5e42946f0800000000000000
+      internalID: -699987698145249859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c750c01785b351f40800000000000000
+      internalID: 5698526154547004796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0f30487744fc570800000000000000
+      internalID: 8489079102723322060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bea296c4d49ccad0800000000000000
+      internalID: -2680604036606808394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2079613cf1411a0800000000000000
+      internalID: -6839807011310861658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169ed4c3bb620e360800000000000000
+      internalID: 7196794790150531425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d3032f1860c2870800000000000000
+      internalID: 8659303338710416730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_9
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a14666650ef1af0800000000000000
+      internalID: -423373178259891636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_10
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565856ea7f556cd20800000000000000
+      internalID: 3298418299366638949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 176
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400352a1c9d2b1d90800000000000000
+      internalID: -7126051836906885116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 176
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffd4f2cc5e658e4b80cce8abe447396
+      internalID: 1796302872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 176
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401393d992b91fa49a338a1902f4a528
+      internalID: 1949214768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00ececb275c18441b7315acee629a98
+      internalID: 550928440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ca8bf5012cb614f8773ea54c4a3c20
+      internalID: 3980211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_27
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f18185e0368f734b9b857ebb96dc39f
+      internalID: 949966865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_201
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 176
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8720fa326e6f04f8d5ea1583752891
+      internalID: 1948447926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeMachine_0
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4378682898697fa478283c0ab4789cfc
+      internalID: -8627368678555976251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ca2304443e97e9c43a23022c1881b3bd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TimeMachine_0: -8627368678555976251
+      TimeMachine_1: -4219227340698045808
+      TimeMachine_10: 3298418299366638949
+      TimeMachine_100: 1531268595
+      TimeMachine_101: 890659967
+      TimeMachine_102: -541473198
+      TimeMachine_103: -311381838
+      TimeMachine_104: -2128171522
+      TimeMachine_105: 303062900
+      TimeMachine_106: 889763259
+      TimeMachine_107: -604559201
+      TimeMachine_108: -895014568
+      TimeMachine_109: -1124156708
+      TimeMachine_11: -7126051836906885116
+      TimeMachine_110: -371660975
+      TimeMachine_111: -2085468494
+      TimeMachine_112: 470557831
+      TimeMachine_113: 562197549
+      TimeMachine_114: -458719766
+      TimeMachine_115: -492307690
+      TimeMachine_116: 689400096
+      TimeMachine_117: -2141911328
+      TimeMachine_118: -1953782738
+      TimeMachine_119: -2054277617
+      TimeMachine_12: -177857635982069544
+      TimeMachine_120: 357259242
+      TimeMachine_121: -991346650
+      TimeMachine_122: -1173206962
+      TimeMachine_123: -1706546399
+      TimeMachine_124: -766454140
+      TimeMachine_125: -2068648971
+      TimeMachine_126: -1897206107
+      TimeMachine_127: 954900883
+      TimeMachine_128: -2020155651
+      TimeMachine_129: 814492250
+      TimeMachine_13: 3712266081913683068
+      TimeMachine_130: 1570400430
+      TimeMachine_131: 619223153
+      TimeMachine_132: 679945300
+      TimeMachine_133: -1549589590
+      TimeMachine_134: -887845101
+      TimeMachine_135: 622642978
+      TimeMachine_136: 92468196
+      TimeMachine_137: 776778310
+      TimeMachine_138: -1043246671
+      TimeMachine_139: 913985248
+      TimeMachine_14: 1796302872
+      TimeMachine_140: -681283198
+      TimeMachine_141: -1918466508
+      TimeMachine_142: -2014371005
+      TimeMachine_143: -1006543046
+      TimeMachine_144: -1309187229
+      TimeMachine_145: 504711824
+      TimeMachine_146: -258388110
+      TimeMachine_147: 1845204409
+      TimeMachine_148: 889246396
+      TimeMachine_149: -672867612
+      TimeMachine_15: 1949214768
+      TimeMachine_150: 1617970266
+      TimeMachine_151: 17118400
+      TimeMachine_152: 1015806615
+      TimeMachine_153: -151671563
+      TimeMachine_154: -2137911028
+      TimeMachine_155: 440264184
+      TimeMachine_156: 353650847
+      TimeMachine_157: 844239495
+      TimeMachine_158: -1756753557
+      TimeMachine_159: -1659624394
+      TimeMachine_16: 1244221140
+      TimeMachine_160: -516562601
+      TimeMachine_161: -1023444938
+      TimeMachine_162: -1599024481
+      TimeMachine_163: 168692327
+      TimeMachine_164: 1752353418
+      TimeMachine_165: -1577865719
+      TimeMachine_166: 1235827135
+      TimeMachine_167: 819599004
+      TimeMachine_168: -1593601744
+      TimeMachine_169: 225629533
+      TimeMachine_17: -1353605891
+      TimeMachine_170: -442954318
+      TimeMachine_171: 1339208834
+      TimeMachine_172: -2126825834
+      TimeMachine_173: 1508059833
+      TimeMachine_174: -1489124410
+      TimeMachine_175: -345514013
+      TimeMachine_176: -1537200809
+      TimeMachine_177: -1583022389
+      TimeMachine_178: 1221291673
+      TimeMachine_179: 1379436631
+      TimeMachine_18: -65871588
+      TimeMachine_180: 33092781
+      TimeMachine_181: -798131442
+      TimeMachine_182: 1739507535
+      TimeMachine_183: -1862481531
+      TimeMachine_184: 1654065145
+      TimeMachine_185: -1315526574
+      TimeMachine_186: -212939031
+      TimeMachine_187: 2070354216
+      TimeMachine_188: 1272330932
+      TimeMachine_189: -694315570
+      TimeMachine_19: -792671140
+      TimeMachine_190: 758026434
+      TimeMachine_191: -1448567238
+      TimeMachine_192: 1216306691
+      TimeMachine_193: -1426437014
+      TimeMachine_194: 835394608
+      TimeMachine_195: 2043556322
+      TimeMachine_196: -566540493
+      TimeMachine_197: -1021200093
+      TimeMachine_198: -3773433
+      TimeMachine_199: -2147198240
+      TimeMachine_2: -699987698145249859
+      TimeMachine_20: 1054276033
+      TimeMachine_200: -1372817699
+      TimeMachine_201: 1948447926
+      TimeMachine_21: 586386948
+      TimeMachine_22: 1650945332
+      TimeMachine_23: 609835331
+      TimeMachine_24: 712909553
+      TimeMachine_25: 550928440
+      TimeMachine_26: 3980211
+      TimeMachine_27: 949966865
+      TimeMachine_28: -1045486569
+      TimeMachine_29: -1300997015
+      TimeMachine_3: 5698526154547004796
+      TimeMachine_30: 1967147728
+      TimeMachine_31: 483725317
+      TimeMachine_32: 809364262
+      TimeMachine_33: 1044683126
+      TimeMachine_34: -1169257493
+      TimeMachine_35: -760360048
+      TimeMachine_36: 425514970
+      TimeMachine_37: -555794680
+      TimeMachine_38: -1278110853
+      TimeMachine_39: -1256720517
+      TimeMachine_4: 8489079102723322060
+      TimeMachine_40: -873884449
+      TimeMachine_41: -1877614593
+      TimeMachine_42: 2085315440
+      TimeMachine_43: 1544153348
+      TimeMachine_44: 2126702099
+      TimeMachine_45: 1624818344
+      TimeMachine_46: 1222511885
+      TimeMachine_47: -1830355764
+      TimeMachine_48: 144908402
+      TimeMachine_49: -1889761812
+      TimeMachine_5: -2680604036606808394
+      TimeMachine_50: 432594258
+      TimeMachine_51: -1099394481
+      TimeMachine_52: -1668284817
+      TimeMachine_53: 572506254
+      TimeMachine_54: 351716291
+      TimeMachine_55: 2070773645
+      TimeMachine_56: 482330090
+      TimeMachine_57: 1816213795
+      TimeMachine_58: 923707440
+      TimeMachine_59: -1201160380
+      TimeMachine_6: -6839807011310861658
+      TimeMachine_60: -1717543080
+      TimeMachine_61: 1008866540
+      TimeMachine_62: 1954058064
+      TimeMachine_63: 450854448
+      TimeMachine_64: -1314603757
+      TimeMachine_65: -1415230296
+      TimeMachine_66: 1553068131
+      TimeMachine_67: -427769493
+      TimeMachine_68: 333961281
+      TimeMachine_69: -704906731
+      TimeMachine_7: 7196794790150531425
+      TimeMachine_70: 1708943089
+      TimeMachine_71: 1945122850
+      TimeMachine_72: -1422740437
+      TimeMachine_73: -147060178
+      TimeMachine_74: -99765459
+      TimeMachine_75: 117138940
+      TimeMachine_76: -1082186750
+      TimeMachine_77: -701578482
+      TimeMachine_78: -1802204361
+      TimeMachine_79: -1543415639
+      TimeMachine_8: 8659303338710416730
+      TimeMachine_80: 713183101
+      TimeMachine_81: 748878861
+      TimeMachine_82: -929333012
+      TimeMachine_83: 586844482
+      TimeMachine_84: 171141411
+      TimeMachine_85: 2002462156
+      TimeMachine_86: -1043598597
+      TimeMachine_87: -2007354431
+      TimeMachine_88: -989710952
+      TimeMachine_89: 1745425866
+      TimeMachine_9: -423373178259891636
+      TimeMachine_90: 114607421
+      TimeMachine_91: 1912012804
+      TimeMachine_92: -1517492363
+      TimeMachine_93: 171494482
+      TimeMachine_94: 705074506
+      TimeMachine_95: 119615782
+      TimeMachine_96: 1254891836
+      TimeMachine_97: -454417101
+      TimeMachine_98: -911928466
+      TimeMachine_99: 1172881048
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -269,7 +269,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: -1722340746, guid: 1f242bd88114a044b89054373420040d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -358,6 +358,8 @@ MonoBehaviour:
   currentHealth: 0
   healthbar: {fileID: 0}
   playerHealth: {fileID: 11400000, guid: d224f8e7d9fd62d48a453959f412bb7a, type: 2}
+  respawnPoint: {fileID: 0}
+  hitSound: {fileID: 0}
 --- !u!114 &1895370259687661771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,7 +436,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.5985092}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -444,7 +446,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.7080445, y: 0.80298156}
   m_EdgeRadius: 0
 --- !u!82 &6388275763048570199
 AudioSource:
