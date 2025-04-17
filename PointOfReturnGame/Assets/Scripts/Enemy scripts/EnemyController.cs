@@ -19,13 +19,31 @@ public class EnemyController : MonoBehaviour
     [SerializeField] float health = 0f;
     private bool isDying = false;
 
+
+    public EnemyState enemyState;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerAwareness = GetComponent<PlayerAwarenessController>();
-        health = maxHealth;
+        /*health = maxHealth;
+        enemyState.enemyHealth = maxHealth;*/
         renderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        if (enemyState.enemyHealth <= 0 || enemyState.enemyHealth > maxHealth)
+        {
+            enemyState.enemyHealth = maxHealth;
+        }
+
+        health = enemyState.enemyHealth;
+
+        if (enemyState.isDead == true)
+        {
+            Destroy(gameObject);
+            return;
+        }
     }
 
 
@@ -66,9 +84,11 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        enemyState.enemyHealth -= damage;
         if (health <= 0 && !isDying)
         {
             StartCoroutine("DeathEffect");
+            enemyState.enemyHealth = health;
         }
         else
         {
@@ -89,6 +109,7 @@ public class EnemyController : MonoBehaviour
     IEnumerator DeathEffect()
     {
         isDying = true;
+        enemyState.isDead = true;
         GetComponent<EnemyAttack>().enabled = false;
         float currentTime = 0;
         while (currentTime < 0.5f)
