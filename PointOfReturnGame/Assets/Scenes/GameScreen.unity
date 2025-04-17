@@ -747,6 +747,7 @@ MonoBehaviour:
   hitSound: {fileID: 974144536}
   maxHealth: 30
   health: 0
+  enemyState: {fileID: 11400000, guid: e465d12bb0b72044bb2f337043c47fc7, type: 2}
 --- !u!61 &679062102
 BoxCollider2D:
   m_ObjectHideFlags: 0
