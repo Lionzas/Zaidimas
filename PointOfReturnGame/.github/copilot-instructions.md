@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI, Interactable
 - Active game object:
-  - Name: 3f4m_qyvh_231020_0
-  - Tag: Untagged
+  - Name: TestEnemy
+  - Tag: Enemy
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
