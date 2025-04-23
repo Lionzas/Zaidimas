@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI, Interactable
 - Active game object:
-  - Name: TestEnemy
+  - Name: Dog_01
   - Tag: Enemy
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
