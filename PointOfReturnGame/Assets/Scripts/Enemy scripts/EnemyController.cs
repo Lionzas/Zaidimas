@@ -15,13 +15,12 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private AudioSource hitSound;
 
 
+    [SerializeField] string enemyId;
     [SerializeField] float maxHealth = 10f;
     [SerializeField] float health = 0f;
     private bool isDying = false;
 
-
-    public EnemyState enemyState;
-
+    private EnemyData enemyData;
 
     void Start()
     {
@@ -32,17 +31,22 @@ public class EnemyController : MonoBehaviour
         renderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
-        if (enemyState.enemyHealth <= 0 || enemyState.enemyHealth > maxHealth)
-        {
-            enemyState.enemyHealth = maxHealth;
-        }
+        enemyData = EnemyStateManager.Instance.GetEnemyData(enemyId, maxHealth);
 
-        health = enemyState.enemyHealth;
-
-        if (enemyState.isDead == true)
+        if (enemyData.isDead)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             return;
+        }
+        health = enemyData.enemyHealth;
+    }
+
+
+    void OnEnable()
+    {
+        if (enemyData != null && enemyData.isDead)
+        {
+            ResetHealth();
         }
     }
 
@@ -84,11 +88,12 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
-        enemyState.enemyHealth -= damage;
+        enemyData.enemyHealth -= damage;
         if (health <= 0 && !isDying)
         {
+            enemyData.isDead = true;
+            EnemyStateManager.Instance.SaveEnemyData();
             StartCoroutine("DeathEffect");
-            enemyState.enemyHealth = health;
         }
         else
         {
@@ -98,6 +103,17 @@ public class EnemyController : MonoBehaviour
             StartCoroutine("ChangeColor");
         }
     }
+
+
+    public void ResetHealth()
+    {
+        health = maxHealth;
+        enemyData.enemyHealth = maxHealth;
+        enemyData.isDead = false;
+        gameObject.SetActive(true);
+        EnemyStateManager.Instance.SaveEnemyData();
+    }
+
 
     IEnumerator ChangeColor()
     {
@@ -109,7 +125,6 @@ public class EnemyController : MonoBehaviour
     IEnumerator DeathEffect()
     {
         isDying = true;
-        enemyState.isDead = true;
         GetComponent<EnemyAttack>().enabled = false;
         float currentTime = 0;
         while (currentTime < 0.5f)
