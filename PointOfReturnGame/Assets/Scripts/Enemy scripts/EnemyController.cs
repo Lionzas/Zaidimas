@@ -97,8 +97,11 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            hitSound.Play();
-            DontDestroyOnLoad(this.hitSound);
+            if (hitSound != null)
+            {
+                hitSound.Play();
+                DontDestroyOnLoad(this.hitSound);
+            }
             rb.AddForce(targetDirection.normalized * -100f * damage);
             StartCoroutine("ChangeColor");
         }
