@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3490566, g: 0.15970987, b: 0.15970987, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prompt: (F) Open Door
+  doorSound: {fileID: 0}
   sceneBuildIndex: 3
   playerPosition: {x: -2, y: 3}
   playerStorage: {fileID: 11400000, guid: ea9599d96c37c6c4b8ffe3b5b601de58, type: 2}
