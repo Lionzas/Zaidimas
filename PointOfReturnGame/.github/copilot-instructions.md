@@ -4,11 +4,11 @@
 - Active scene:
   - Name: GameScreen
   - Tags:
-    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, GameMusic, Enemy
+    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, GameMusic, Enemy, Inventory
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI, Interactable
 - Active game object:
-  - Name: Dog_01
+  - Name: Robot
   - Tag: Enemy
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

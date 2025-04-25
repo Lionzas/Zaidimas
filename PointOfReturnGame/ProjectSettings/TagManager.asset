@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameMusic
   - Enemy
+  - Inventory
   layers:
   - Default
   - TransparentFX
