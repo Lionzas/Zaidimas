@@ -9,6 +9,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _sliderText;
     [SerializeField] private Slider volumeSlider;
 
+
     void Start()
     {
         volumeSlider.onValueChanged.AddListener((v) => {
@@ -36,6 +37,8 @@ public class SoundManager : MonoBehaviour
     {
         volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
         _sliderText.text = volumeSlider.value.ToString("0.00");  
+
+        ChangeVolume();
     }
 
     private void Save()
