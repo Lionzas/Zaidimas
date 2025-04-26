@@ -93,7 +93,49 @@ public class InventoryManager : MonoBehaviour
     {
         return inventoryItems.Contains(item);
     }
-    
+
+
+    public bool HasItemId(string itemId)
+    {
+        return inventoryItems.Exists(item => item.itemId == itemId);
+    }
+
+
+    public bool SelectedHasItemId(string itemId)
+    {
+        return slots[selectedSlot].item?.itemId == itemId;
+    }
+
+
+    public bool RemoveItem(string itemId)
+    {
+        ItemData item = inventoryItems.Find(item => item.itemId == itemId);
+        if (item == null) return false;
+
+        inventoryItems.Remove(item);
+
+        RefreshInventory();
+        return true;
+    }
+
+
+    public bool RemoveItemByIdInSlot(string itemId)
+    {
+        InventorySlot currentSlot = slots[selectedSlot];
+
+        if (currentSlot.item != null && currentSlot.item.itemId == itemId)
+        {
+            bool removedFromList = inventoryItems.Remove(currentSlot.item);
+
+            if (removedFromList)
+            {
+                currentSlot.ClearSlot();
+                return true;
+            }
+        }
+        return false;
+    }
+
     
     private void Update()
     {

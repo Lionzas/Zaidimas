@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a732d4e630634574eb2cc183dccb378f, type: 3}
   m_Name: KeyData
   m_EditorClassIdentifier: 
-  itemId: key_01
+  itemId: key
   icon: {fileID: 6099581493293703690, guid: 1084f523c1f411f4c935cdf29f04b237, type: 3}
+  itemType: 0
+  weaponType: 0
