@@ -6,12 +6,14 @@ public class MachineManager : MonoBehaviour
     [SerializeField] TimeMachine timeMachine;
     public int portalState;
     public bool pipes;
+    public bool fuel;
 
     public void SaveData()
     {
         MachineData machineData = new MachineData();
         machineData.portalState = timeMachine.portalState;
         machineData.pipes = timeMachine.pipes;
+        machineData.fuel = timeMachine.fuel;
 
         string json = JsonUtility.ToJson(machineData);
         string path = Application.persistentDataPath + "/machineData.json";
@@ -27,6 +29,7 @@ public class MachineManager : MonoBehaviour
             MachineData loadedData = JsonUtility.FromJson<MachineData>(json);
             timeMachine.portalState = loadedData.portalState;
             timeMachine.pipes = loadedData.pipes;
+            timeMachine.fuel = loadedData.fuel;
         }
         else
         {

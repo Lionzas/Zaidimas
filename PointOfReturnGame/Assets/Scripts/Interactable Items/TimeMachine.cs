@@ -6,6 +6,7 @@ public class TimeMachine : MonoBehaviour, IInteractable
     [SerializeField] private string prompt;
     [SerializeField] private AudioSource m_clicksound;
     [SerializeField] private GameObject portal;
+    [SerializeField] private GameObject clock;
     public GameObject popUpPanel;
     public TMP_Text popUpText;
     [SerializeField] private string textFailed;
@@ -15,6 +16,7 @@ public class TimeMachine : MonoBehaviour, IInteractable
     [SerializeField] private string promptCompleted;
     public int portalState;
     public bool pipes;
+    public bool fuel;
     [SerializeField] private MachineManager machineManager;
     
     public string InteractionPrompt => prompt;
@@ -58,6 +60,7 @@ public class TimeMachine : MonoBehaviour, IInteractable
             if (InventoryManager.instance.SelectedHasItemId("fuel_canister"))
             {
                 InventoryManager.instance.RemoveItemByIdInSlot("fuel_canister");
+                fuel = true;
                 IsSuccessful = Repair();
                 text = textCanister;
             }
@@ -92,10 +95,20 @@ public class TimeMachine : MonoBehaviour, IInteractable
 
     private void PlayAnimations()
     {
-        if (pipes)
+        if (pipes && fuel)
             GetComponent<Animator>().Play("MachinePipes");
-        else
+        else if (pipes && !fuel)
+            GetComponent<Animator>().Play("MachinePipesStatic");
+        else if (!pipes)
             GetComponent<Animator>().Play("MachineStatic");
+
+        if (pipes)
+        {
+            clock.SetActive(true);
+            clock.GetComponent<Animator>().Play("Clock");
+        }
+        else
+            clock.SetActive(false);
 
         switch (portalState)
         {
