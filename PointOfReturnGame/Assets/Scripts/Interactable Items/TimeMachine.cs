@@ -99,7 +99,7 @@ public class TimeMachine : MonoBehaviour, IInteractable
             GetComponent<Animator>().Play("MachinePipes");
         else if (pipes && !fuel)
             GetComponent<Animator>().Play("MachinePipesStatic");
-        else if (!pipes)
+        else
             GetComponent<Animator>().Play("MachineStatic");
 
         if (pipes)

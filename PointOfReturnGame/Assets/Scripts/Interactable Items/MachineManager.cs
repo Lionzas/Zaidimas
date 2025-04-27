@@ -4,9 +4,6 @@ using UnityEngine;
 public class MachineManager : MonoBehaviour
 {
     [SerializeField] TimeMachine timeMachine;
-    public int portalState;
-    public bool pipes;
-    public bool fuel;
 
     public void SaveData()
     {
