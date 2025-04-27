@@ -102,7 +102,6 @@ public class EnemyController : MonoBehaviour
                 hitSound.Play();
                 DontDestroyOnLoad(this.hitSound);
             }
-            rb.AddForce(targetDirection.normalized * -100f * damage);
             StartCoroutine("ChangeColor");
         }
     }
@@ -120,9 +119,12 @@ public class EnemyController : MonoBehaviour
 
     IEnumerator ChangeColor()
     {
+        isDying = true;
+        rb.AddForce(targetDirection.normalized * -100f);
         renderer.material.SetColor("_Color", Color.red);
         yield return new WaitForSeconds(0.3f);
         renderer.material.SetColor("_Color", Color.white);
+        isDying = false;
     }
 
     IEnumerator DeathEffect()
