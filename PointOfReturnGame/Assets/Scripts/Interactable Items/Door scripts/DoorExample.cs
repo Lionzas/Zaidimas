@@ -1,26 +1,30 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelDoor : MonoBehaviour, IInteractable
+public class DoorExample : MonoBehaviour, IInteractable
 {
     [SerializeField] private string prompt;
     [SerializeField] private AudioSource doorSound;
+
+
     public string InteractionPrompt => prompt;
 
+    public int sceneBuildIndex;
+    public Vector2 playerPosition;
+    public VectorValue playerStorage;
     Animator anim;
-    Collider2D coll;
 
 
     public bool Interact(Interactor interactor)
     {
+
         PlayDoorSound();
         Debug.Log("Opening door");
         if (anim = GetComponent<Animator>())
         {
-            coll = GetComponent<Collider2D>();
-            anim.SetTrigger("Opened"); 
-            coll.isTrigger = !coll.isTrigger;
+            anim.SetTrigger("Opened");
         }
+        LoadScene();
         return true;
         /*
                 // Key check example
@@ -33,6 +37,12 @@ public class LevelDoor : MonoBehaviour, IInteractable
                     Debug.Log("Missing key");
                 return true;
         */
+    }
+
+    public void LoadScene()
+    {
+        playerStorage.initialValue = playerPosition;
+        SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
     }
     private void PlayDoorSound()
     {
