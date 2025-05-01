@@ -1,47 +1,38 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class DoorExample : MonoBehaviour, IInteractable
+public class LevelDoor : MonoBehaviour, IInteractable
 {
     [SerializeField] private string prompt;
     [SerializeField] private AudioSource doorSound;
 
     public string InteractionPrompt => prompt;
 
-    public int sceneBuildIndex;
-    public Vector2 playerPosition;
-    public VectorValue playerStorage;
     Animator anim;
+    Collider2D coll;
 
 
     public bool Interact(Interactor interactor)
     {
         PlayDoorSound();
         Debug.Log("Opening door");
-        if(anim = GetComponent<Animator>())
+        if (anim = GetComponent<Animator>())
         {
-            anim.SetTrigger("Opened");
+            coll = GetComponent<Collider2D>();
+            anim.SetTrigger("Opened"); 
+            coll.isTrigger = !coll.isTrigger;
         }
-        LoadScene();
         return true;
-/*
-        // Key check example
-        var inventory = interactor.GetComponent<Inventory>();
-        if (inventory == null)
-            return false;
-        if (inventory.HasKey())
-            Debug.Log("Opening door");
-        else
-            Debug.Log("Missing key");
-        return true;
-*/
-    }
-
-    public void LoadScene()
-    {
-        playerStorage.initialValue = playerPosition;
-        SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+        /*
+                // Key check example
+                var inventory = interactor.GetComponent<Inventory>();
+                if (inventory == null)
+                    return false;
+                if (inventory.HasKey())
+                    Debug.Log("Opening door");
+                else
+                    Debug.Log("Missing key");
+                return true;
+        */
     }
     private void PlayDoorSound()
     {

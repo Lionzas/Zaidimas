@@ -4,11 +4,11 @@
 - Active scene:
   - Name: GameScreen
   - Tags:
-    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, GameMusic, Enemy, Inventory
+    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, GameMusic, Enemy, Inventory, Unlocked, Locked
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI, Interactable
 - Active game object:
-  - Name: Square
+  - Name: CrossFade
   - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

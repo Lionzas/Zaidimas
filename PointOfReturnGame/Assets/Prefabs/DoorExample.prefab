@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7650525774340297632}
   m_Layer: 6
   m_Name: DoorExample
-  m_TagString: Untagged
+  m_TagString: Locked
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,6 +103,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prompt: (F) Open Door
   doorSound: {fileID: 0}
+  keyId: key_01
+  popUpPanel: {fileID: 0}
+  popUpText: {fileID: 0}
   sceneBuildIndex: 3
   playerPosition: {x: -2, y: 3}
   playerStorage: {fileID: 11400000, guid: ea9599d96c37c6c4b8ffe3b5b601de58, type: 2}

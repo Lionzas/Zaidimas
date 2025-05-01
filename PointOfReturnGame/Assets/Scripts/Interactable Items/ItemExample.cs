@@ -19,7 +19,6 @@ public class ItemExample : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        // Check if this item was already picked up
         if (InventoryManager.instance != null &&
             InventoryManager.instance.HasItem(itemData))
         {

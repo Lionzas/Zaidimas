@@ -7,6 +7,8 @@ TagManager:
   - GameMusic
   - Enemy
   - Inventory
+  - Unlocked
+  - Locked
   layers:
   - Default
   - TransparentFX

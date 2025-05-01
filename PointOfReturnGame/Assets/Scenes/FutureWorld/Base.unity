@@ -238,6 +238,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4461741656346524995, guid: 2b7bd1cb9d59b7547be86ac833865f38, type: 3}
+      propertyPath: keyId
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461741656346524995, guid: 2b7bd1cb9d59b7547be86ac833865f38, type: 3}
       propertyPath: prompt
       value: (F) Leave Base
       objectReference: {fileID: 0}
@@ -308,6 +312,10 @@ PrefabInstance:
     - target: {fileID: 8806662074196910978, guid: 2b7bd1cb9d59b7547be86ac833865f38, type: 3}
       propertyPath: m_Name
       value: BaseLadder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806662074196910978, guid: 2b7bd1cb9d59b7547be86ac833865f38, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2217,9 +2225,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4847158496862021353, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1866896719}
-    - targetCorrespondingSourceObject: {fileID: 7674646981924468019, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 375429374}
   m_SourcePrefab: {fileID: 100100000, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
 --- !u!82 &233168202 stripped
 AudioSource:
@@ -2234,11 +2239,6 @@ Transform:
 --- !u!82 &233168204 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 577086252428942834, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
-  m_PrefabInstance: {fileID: 233168201}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &233168205 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1644716118604551004, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
   m_PrefabInstance: {fileID: 233168201}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &289209924
@@ -2753,34 +2753,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &375429372 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7674646981924468019, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
-  m_PrefabInstance: {fileID: 233168201}
-  m_PrefabAsset: {fileID: 0}
---- !u!164 &375429374
-AudioReverbFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375429372}
-  m_Enabled: 1
-  m_DryLevel: 0
-  m_Room: 0
-  m_RoomHF: 0
-  m_DecayTime: 1
-  m_DecayHFRatio: 0.5
-  m_ReflectionsLevel: -10000
-  m_ReverbLevel: 0
-  m_ReverbDelay: 0.04
-  m_Diffusion: 100
-  m_Density: 100
-  m_HFReference: 5000
-  m_RoomLF: 0
-  m_LFReference: 250
-  m_ReflectionsDelay: 0
-  m_ReverbPreset: 27
 --- !u!1 &475130023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3295,7 +3267,7 @@ PrefabInstance:
     - target: {fileID: 854462603025822151, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: movementSound
       value: 
-      objectReference: {fileID: 233168205}
+      objectReference: {fileID: 0}
     - target: {fileID: 854462603025822151, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: startingPosition
       value: 
@@ -5272,7 +5244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundTilemap: {fileID: 87028279}
-  audioSource: {fileID: 233168205}
+  audioSource: {fileID: 0}
   tileSounds:
   - tiles:
     - {fileID: 11400000, guid: aa61963998aea0f40aef26be2b24cc93, type: 2}
@@ -5916,9 +5888,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeMachine: {fileID: 1909679928}
-  portalState: 0
-  pipes: 0
-  fuel: 0
 --- !u!1 &1909679921
 GameObject:
   m_ObjectHideFlags: 0
