@@ -52,10 +52,10 @@ public class PlayerProfile : MonoBehaviour
         currentHealth = Mathf.Max(currentHealth - amount, 0);
         playerHealth.initialHealth = currentHealth;
         healthbar.SetHealth(currentHealth, maxHealth);
-        StartCoroutine("ChangeColor");
+        StartCoroutine("ChangeColorRed");
     }
 
-    IEnumerator ChangeColor()
+    IEnumerator ChangeColorRed()
     {
         hitSound.Play();
         DontDestroyOnLoad(this.hitSound);
@@ -69,6 +69,14 @@ public class PlayerProfile : MonoBehaviour
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
         playerHealth.initialHealth = currentHealth;
         healthbar.SetHealth(currentHealth, maxHealth);
+        StartCoroutine("ChangeColorGreen");
+    }
+
+    IEnumerator ChangeColorGreen()
+    {
+        GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.Lerp(Color.green, Color.white, 0.33f));
+        yield return new WaitForSeconds(0.3f);
+        GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.white);
     }
 
 
