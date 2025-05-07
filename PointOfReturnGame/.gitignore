@@ -71,3 +71,6 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Zaidimo healthBar-o reiksmes saugojimo failas
+PointOfReturnGame/Assets/Materials/HealthbarMat.mat

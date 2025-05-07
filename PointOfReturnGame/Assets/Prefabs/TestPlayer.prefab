@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 7517474858507327401}
   - component: {fileID: 167108354206567184}
   - component: {fileID: 6388275763048570199}
+  - component: {fileID: 8219997030834591737}
   m_Layer: 0
   m_Name: TestPlayer
   m_TagString: Player
@@ -545,6 +546,76 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8219997030834591737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088520851900857436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f6280781fefc140b1812bd92129bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundTilemap: {fileID: 0}
+  audioSource: {fileID: 0}
+  tileSounds:
+  - tiles:
+    - {fileID: 11400000, guid: aa61963998aea0f40aef26be2b24cc93, type: 2}
+    footstepClips:
+    - {fileID: 8300000, guid: 52dad7db1c87c6b43b08e61af2afd670, type: 3}
+    - {fileID: 8300000, guid: f949dca4377271e4d9213116c297248b, type: 3}
+    - {fileID: 8300000, guid: 6bfb41e3a3c5d104dbad2e521fbcc283, type: 3}
+    - {fileID: 8300000, guid: 7d084140b125bbc4b887c8200fef0b35, type: 3}
+    - {fileID: 8300000, guid: cf2e351bc5418a549a4705971677f878, type: 3}
+    - {fileID: 8300000, guid: 51100c124f44559499699a8372c14b39, type: 3}
+    - {fileID: 8300000, guid: 49a030c6cd2e1bc478f9886c6fb0bf3f, type: 3}
+    - {fileID: 8300000, guid: 4eb56294e9daf534b8b0418955132fbb, type: 3}
+    - {fileID: 8300000, guid: f8f2f5a6ddd93ce4a899f54693881966, type: 3}
+    - {fileID: 8300000, guid: 4ad96489cef19dd4b91a32e38301781a, type: 3}
+  - tiles:
+    - {fileID: 11400000, guid: 9b75a1c8104aaba42849f93ad7d1c639, type: 2}
+    - {fileID: 11400000, guid: d63dad786d36fea499e6a3b698dfddf2, type: 2}
+    - {fileID: 11400000, guid: 29793ae3071de52439b3ca56be85557d, type: 2}
+    - {fileID: 11400000, guid: 3ddb15844a1570742ae807bbe013771e, type: 2}
+    - {fileID: 11400000, guid: a981b3a2e8929eb4d8a2421ef9257005, type: 2}
+    - {fileID: 11400000, guid: a981b3a2e8929eb4d8a2421ef9257005, type: 2}
+    footstepClips:
+    - {fileID: 8300000, guid: c71b0bc89987ec24282156f86fe17eae, type: 3}
+    - {fileID: 8300000, guid: 6be809204f9211740bb0909d24967fc2, type: 3}
+    - {fileID: 8300000, guid: 715161a460e7ba446a7b8f2de8848535, type: 3}
+    - {fileID: 8300000, guid: fca7240a2294eff4e938e0b0d85897a4, type: 3}
+    - {fileID: 8300000, guid: 32ebaf9c2fb6ad141bf3358d05d30e05, type: 3}
+    - {fileID: 8300000, guid: 8d8d0ad9895e30141a77c8649a7ffd19, type: 3}
+    - {fileID: 8300000, guid: d39b52e97f3aff04f950df26a5da1d31, type: 3}
+    - {fileID: 8300000, guid: 096e13e99f8b42d45be22e92e05e2e50, type: 3}
+    - {fileID: 8300000, guid: c273fc7d23290f7448bc5751dd1e8925, type: 3}
+    - {fileID: 8300000, guid: 34fcd56b35add564192bfd1b9e6cb9b8, type: 3}
+  - tiles:
+    - {fileID: 11400000, guid: ad73b34c4739fde41be019564338f2b6, type: 2}
+    - {fileID: 11400000, guid: 875263d7a57416d44af338e8e2e3d90a, type: 2}
+    - {fileID: 11400000, guid: a93b5ca482cedec4c8f529284576d472, type: 2}
+    - {fileID: 11400000, guid: 906bb3da452b4ad44ac07233dc5af5b8, type: 2}
+    - {fileID: 11400000, guid: 8d4bcfb84afb7f34a80d33fad19440e5, type: 2}
+    - {fileID: 11400000, guid: ed83b58506da6d44590ec326b10a9a06, type: 2}
+    - {fileID: 11400000, guid: 2e405877bbfe8244d97dd042da6ead5c, type: 2}
+    - {fileID: 11400000, guid: 4b6e5a2eca4c7864998da0a39d0f52bb, type: 2}
+    - {fileID: 11400000, guid: 6426264812675894ab75ff635e89bfdd, type: 2}
+    - {fileID: 11400000, guid: 0627ba69f7a59844cba2246dec95fb02, type: 2}
+    - {fileID: 11400000, guid: 0627ba69f7a59844cba2246dec95fb02, type: 2}
+    footstepClips:
+    - {fileID: 8300000, guid: 45c193f5b0786704f9d7a7128d63302b, type: 3}
+    - {fileID: 8300000, guid: dc237e083d5f834428ec3448cfbbfa46, type: 3}
+    - {fileID: 8300000, guid: d3a4cd2b61e264645b604bfe49b4ba59, type: 3}
+    - {fileID: 8300000, guid: 7c4b3039c30c7a84d9bf2558f1c5ee1a, type: 3}
+    - {fileID: 8300000, guid: 7b1e4663b80dbf445944e5d71e71dc63, type: 3}
+    - {fileID: 8300000, guid: 383c42c60e1d1634494ba3c386215cb5, type: 3}
+    - {fileID: 8300000, guid: 17d0473812cd10a4f892e322e211632e, type: 3}
+    - {fileID: 8300000, guid: a58900c433a94c942a66103409c5586e, type: 3}
+    - {fileID: 8300000, guid: 00e5f6e11b65ac14397e7691f250021f, type: 3}
+    - {fileID: 8300000, guid: 657af5f962bf45849b623688c547b728, type: 3}
+  footstepInterval: 0.4
 --- !u!1 &3521923147277552758
 GameObject:
   m_ObjectHideFlags: 0

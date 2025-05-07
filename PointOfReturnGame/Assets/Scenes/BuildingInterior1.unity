@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 854462603025822151, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: movementSound
       value: 
-      objectReference: {fileID: 995627628}
+      objectReference: {fileID: 0}
     - target: {fileID: 854462603025822151, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: startingPosition
       value: 
@@ -195,7 +195,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8219997030834591737, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 995627628}
+    m_RemovedComponents:
+    - {fileID: 8219997030834591737, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -370,7 +375,7 @@ AudioSource:
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &995627628 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1644716118604551004, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1090554879090034569, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
   m_PrefabInstance: {fileID: 995627625}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1130514433 stripped

@@ -127,10 +127,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 167108354206567184, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 820100980673985061, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: prompt
       value: 
       objectReference: {fileID: 2044953000}
+    - target: {fileID: 854462603025822151, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
+      propertyPath: movementSound
+      value: 
+      objectReference: {fileID: 1377075184}
     - target: {fileID: 2088520851900857436, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: m_Name
       value: TestPlayer
@@ -139,6 +147,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6830116629997518709, guid: 98568affd75b7924fa3a392a2c4061bd, type: 3}
+    - target: {fileID: 7440279949535084951, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7794973909044900579, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0176175
@@ -177,6 +189,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7794973909044900579, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219997030834591737, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -377,6 +393,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35e9f44d0eacb5f478a8353b8bf4e796, type: 3}
+--- !u!82 &1377075184 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1090554879090034569, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
+  m_PrefabInstance: {fileID: 1749449802}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1429382612
 PrefabInstance:
   m_ObjectHideFlags: 0
