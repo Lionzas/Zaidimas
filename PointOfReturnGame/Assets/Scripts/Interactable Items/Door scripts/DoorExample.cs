@@ -49,7 +49,8 @@ public class DoorExample : MonoBehaviour, IInteractable
         GameObject tempAudio = new GameObject("TempAudio");
         AudioSource tempSource = tempAudio.AddComponent<AudioSource>();
 
-        tempSource.clip = doorSound.clip;
+    
+    tempSource.clip = doorSound.clip;
         tempSource.outputAudioMixerGroup = doorSound.outputAudioMixerGroup;
         tempSource.volume = doorSound.volume;
         tempSource.pitch = doorSound.pitch;
