@@ -13,6 +13,8 @@ public class InventoryManager : MonoBehaviour
     public int selectedSlot = 0;
 
     public List<ItemData> inventoryItems = new List<ItemData>();
+     public List<string> pickedUpItemIds = new List<string>();
+    public List<string> consumedItemIds = new List<string>();
     
 
     private void Awake()
@@ -129,11 +131,19 @@ public class InventoryManager : MonoBehaviour
 
             if (removedFromList)
             {
+                consumedItemIds.Add(itemId);
                 currentSlot.ClearSlot();
                 return true;
             }
         }
         return false;
+    }
+
+
+    public bool IsItemActiveInWorld(string itemId)
+    {
+        return !pickedUpItemIds.Contains(itemId) && 
+               !consumedItemIds.Contains(itemId);
     }
 
     
