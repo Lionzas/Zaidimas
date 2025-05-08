@@ -19,8 +19,8 @@ public class ItemExample : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        if (InventoryManager.instance != null &&
-            InventoryManager.instance.HasItem(itemData))
+        if (InventoryManager.instance != null && 
+            !InventoryManager.instance.IsItemActiveInWorld(itemData.itemId))
         {
             wasPickedUp = true;
             gameObject.SetActive(false);
@@ -45,6 +45,7 @@ public class ItemExample : MonoBehaviour, IInteractable
 
         if (wasPickedUp)
         {
+            InventoryManager.instance.pickedUpItemIds.Add(itemData.itemId);
             gameObject.SetActive(false);
             Invoke("DisablePopUp", 1f);
             Invoke("DestroyObject", 1.2f);

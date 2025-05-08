@@ -62383,6 +62383,8 @@ MonoBehaviour:
   - {fileID: 445852145}
   selectedSlot: 0
   inventoryItems: []
+  pickedUpItemIds: []
+  consumedItemIds: []
 --- !u!1 &1734318302
 GameObject:
   m_ObjectHideFlags: 0
