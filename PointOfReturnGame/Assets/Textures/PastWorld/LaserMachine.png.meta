@@ -1,40 +1,55 @@
 fileFormatVersion: 2
-guid: 1084f523c1f411f4c935cdf29f04b237
+guid: 0615c05f10dcd8047a9b68c382d4c5ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6761164967045977113
-    second: items_0
+      213: -3692318295786149118
+    second: LaserMachine_0
   - first:
-      213: 5508725064705088119
-    second: items_1
+      213: -4252745121434116782
+    second: LaserMachine_1
   - first:
-      213: -68751727340038015
-    second: items_2
+      213: 9025636865093371655
+    second: LaserMachine_2
   - first:
-      213: 6099581493293703690
-    second: items_3
+      213: 7476407888329568075
+    second: LaserMachine_3
   - first:
-      213: -5428206428529569624
-    second: items_4
+      213: 7757479102196774080
+    second: LaserMachine_4
   - first:
-      213: -7833671090200325546
-    second: items_5
+      213: -940257708453205750
+    second: LaserMachine_5
   - first:
-      213: 5860025163644826426
-    second: items_6
+      213: 248331493851223639
+    second: LaserMachine_6
   - first:
-      213: -7583409310137716746
-    second: items_7
+      213: 1874090001688241790
+    second: LaserMachine_7
   - first:
-      213: 980155311395259703
-    second: items_8
+      213: -4149081086183484983
+    second: LaserMachine_8
   - first:
-      213: -732356172534689064
-    second: items_9
+      213: 8632752028235404788
+    second: LaserMachine_9
   - first:
-      213: 8132948862792318974
-    second: items_10
+      213: 6906981054779490224
+    second: LaserMachine_10
+  - first:
+      213: 7140797646176357720
+    second: LaserMachine_11
+  - first:
+      213: -3018904021936941026
+    second: LaserMachine_12
+  - first:
+      213: 1484252194631299414
+    second: LaserMachine_13
+  - first:
+      213: 5105773683682208969
+    second: LaserMachine_14
+  - first:
+      213: -9188205653592226359
+    second: LaserMachine_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -130,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knife
+      name: LaserMachine_0
       rect:
         serializedVersion: 2
         x: 0
         y: 48
-        width: 16
-        height: 16
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,64 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 914579027bb74dd50800000000000000
-      internalID: 6761164967045977113
+      spriteID: 20badfd921042ccc0800000000000000
+      internalID: -3692318295786149118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spear
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77a9907824ce27c40800000000000000
-      internalID: 5508725064705088119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lockpicks
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 188d3321baebb0ff0800000000000000
-      internalID: -68751727340038015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: key
+      name: LaserMachine_1
       rect:
         serializedVersion: 2
         x: 48
         y: 48
-        width: 16
-        height: 16
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,14 +182,190 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a02615a1d0116a450800000000000000
-      internalID: 6099581493293703690
+      spriteID: 25dd4a418d63bf4c0800000000000000
+      internalID: -4252745121434116782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fuel_canister
+      name: LaserMachine_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7078f8fa8e0814d70800000000000000
+      internalID: 9025636865093371655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fefcbdc5981c760800000000000000
+      internalID: 7476407888329568075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c474fe742a18ab60800000000000000
+      internalID: 7757479102196774080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09e25a889883f2f0800000000000000
+      internalID: -940257708453205750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7565b8d8d20427300800000000000000
+      internalID: 248331493851223639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e762dbb5dea120a10800000000000000
+      internalID: 1874090001688241790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1ddb12cb08b66c0800000000000000
+      internalID: -4149081086183484983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5110d3b32bdc770800000000000000
+      internalID: 8632752028235404788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_10
       rect:
         serializedVersion: 2
         x: 0
@@ -233,152 +380,152 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a0d00c53032ba4b0800000000000000
-      internalID: -5428206428529569624
+      spriteID: 0bffb70bca68adf50800000000000000
+      internalID: 6906981054779490224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cog
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 652dc55e5a5394390800000000000000
-      internalID: -7833671090200325546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scraps
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3376eda6ddf25150800000000000000
-      internalID: 5860025163644826426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pipe
+      name: LaserMachine_11
       rect:
         serializedVersion: 2
         x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ffe9da396152c690800000000000000
-      internalID: -7583409310137716746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blueprint
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7354d6800163a9d00800000000000000
-      internalID: 980155311395259703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: note
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8d25107f0f526d5f0800000000000000
-      internalID: -732356172534689064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lantern
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eff372786e90ed070800000000000000
-      internalID: 8132948862792318974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knife_past
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d894920a5391360800000000000000
+      internalID: 7140797646176357720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18537179c2ba16d0800000000000000
+      internalID: -3018904021936941026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651b712d18f199410800000000000000
+      internalID: 1484252194631299414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc6a6f1d1a5bd640800000000000000
+      internalID: 5105773683682208969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
         width: 16
         height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee56c7eb1b391e48991a8d5f132aa07
+      internalID: -9188205653592226359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bee0442be2087847aa0a7fafc371d17
+      internalID: 2076701119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserMachine_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,30 +534,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9313a94319191554dae587c042ddae9b
-      internalID: -1269990767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spear_past
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eed349753fb0d1d46823822f3e053045
-      internalID: 1500744728
+      spriteID: 11250e18ea23c9e40b866766f79ec0d4
+      internalID: -1802974012
       vertices: []
       indices: 
       edges: []
@@ -419,7 +544,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c1392ce68d251144fa5c03c316b87a9d
+    spriteID: 9843fee558ec6bd478eaec64b95090f9
     internalID: 0
     vertices: []
     indices: 
@@ -429,19 +554,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      blueprint: 980155311395259703
-      cog: -7833671090200325546
-      fuel_canister: -5428206428529569624
-      key: 6099581493293703690
-      knife: 6761164967045977113
-      knife_past: -1269990767
-      lantern: 8132948862792318974
-      lockpicks: -68751727340038015
-      note: -732356172534689064
-      pipe: -7583409310137716746
-      scraps: 5860025163644826426
-      spear: 5508725064705088119
-      spear_past: 1500744728
+      LaserMachine_0: -3692318295786149118
+      LaserMachine_1: -4252745121434116782
+      LaserMachine_10: 6906981054779490224
+      LaserMachine_11: 7140797646176357720
+      LaserMachine_12: -3018904021936941026
+      LaserMachine_13: 1484252194631299414
+      LaserMachine_14: 5105773683682208969
+      LaserMachine_15: -9188205653592226359
+      LaserMachine_16: 2076701119
+      LaserMachine_17: -1802974012
+      LaserMachine_2: 9025636865093371655
+      LaserMachine_3: 7476407888329568075
+      LaserMachine_4: 7757479102196774080
+      LaserMachine_5: -940257708453205750
+      LaserMachine_6: 248331493851223639
+      LaserMachine_7: 1874090001688241790
+      LaserMachine_8: -4149081086183484983
+      LaserMachine_9: 8632752028235404788
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
