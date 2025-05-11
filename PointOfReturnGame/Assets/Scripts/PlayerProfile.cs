@@ -11,6 +11,7 @@ public class PlayerProfile : MonoBehaviour
     public PlayerHealth playerHealth;
     public Transform respawnPoint;
     [SerializeField] private AudioSource hitSound;
+    [SerializeField] private GameObject deathScreenPanel;
 
 
     void Start()
@@ -40,10 +41,16 @@ public class PlayerProfile : MonoBehaviour
         {
             RestoreHealth(15);
         }
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
-            RespawnPoint();
-            //ReloadScene();
+            ShowDeathScreen();
+        }
+    }
+    public void ShowDeathScreen()
+    {
+        if (deathScreenPanel != null)
+        {
+            deathScreenPanel.SetActive(true);
         }
     }
 
