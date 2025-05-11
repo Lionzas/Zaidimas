@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu1 : MonoBehaviour
 {
-    public static PauseMenu instance;
+    public static PauseMenu1 instance;
 
     public GameObject PausePanel;
     private bool isPaused;
@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+
         }
         else
         {
