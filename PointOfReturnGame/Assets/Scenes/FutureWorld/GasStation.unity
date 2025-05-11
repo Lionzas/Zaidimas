@@ -9689,6 +9689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5595282063461737991, guid: b399b7f7bd946f54e9aab0deca51b404, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7056488250076733162, guid: b399b7f7bd946f54e9aab0deca51b404, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9764,6 +9768,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68cddaed34c4ed941a89d6350eca12c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &289209927 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2147375051896785700, guid: b399b7f7bd946f54e9aab0deca51b404, type: 3}
+  m_PrefabInstance: {fileID: 289209924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &289209928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7001688863838460468, guid: b399b7f7bd946f54e9aab0deca51b404, type: 3}
+  m_PrefabInstance: {fileID: 289209924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &293406806
 GameObject:
   m_ObjectHideFlags: 0
@@ -9812,6 +9832,11 @@ Transform:
   - {fileID: 122575980}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &426757727 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4922070408144882473, guid: 724c6f0d1197a9140b4ec86b688380b6, type: 3}
+  m_PrefabInstance: {fileID: 233168201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &505759010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10949,10 +10974,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prompt: (F) Pick up Canister
-  m_clicksound: {fileID: 0}
+  m_clicksound: {fileID: 426757727}
   itemData: {fileID: 11400000, guid: 32288c98309f71940966f53c7672fa4f, type: 2}
-  popUpPanel: {fileID: 0}
-  popUpText: {fileID: 0}
+  popUpPanel: {fileID: 289209928}
+  popUpText: {fileID: 289209927}
   text: Picked up Canister
 --- !u!212 &1773168504
 SpriteRenderer:

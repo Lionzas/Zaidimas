@@ -67595,6 +67595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5595282063461737991, guid: b399b7f7bd946f54e9aab0deca51b404, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7056488250076733162, guid: b399b7f7bd946f54e9aab0deca51b404, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

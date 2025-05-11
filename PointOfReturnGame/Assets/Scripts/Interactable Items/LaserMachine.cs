@@ -12,7 +12,7 @@ public class LaserMachine : MonoBehaviour, IInteractable
     private bool activated;
 
     public string InteractionPrompt => prompt;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         laserBeam.SetActive(false);
@@ -24,6 +24,7 @@ public class LaserMachine : MonoBehaviour, IInteractable
         //if (!activated && InventoryManager.instance.SelectedHasItemId("device"))
         if (!activated)
         {
+            //InventoryManager.instance.RemoveItemByIdInSlot("device");
             PlayAnimations();
             activated = true;
             prompt = "";

@@ -18,15 +18,16 @@ public class EndGame : MonoBehaviour
     IEnumerator Fadeout()
     {
         float currentTime = 0;
-        while (currentTime < fadeoutTime)
+        while (currentTime <= fadeoutTime)
         {
             canvas.alpha = currentTime / fadeoutTime;
             currentTime += Time.deltaTime;
             yield return null;
         }
+        canvas.alpha = 1;
 
         currentTime = 0;
-        while (currentTime < fadeoutTime / 2)
+        while (currentTime <= fadeoutTime / 2)
         {
             canvasText1.alpha = (currentTime / fadeoutTime) * 2;
             currentTime += Time.deltaTime;
@@ -34,7 +35,7 @@ public class EndGame : MonoBehaviour
         }
 
         currentTime = 0;
-        while (currentTime < fadeoutTime / 2)
+        while (currentTime <= fadeoutTime / 2)
         {
             canvasText2.alpha = (currentTime / fadeoutTime) * 2;
             currentTime += Time.deltaTime;
