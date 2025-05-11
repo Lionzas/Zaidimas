@@ -21,15 +21,13 @@ public class LaserMachine : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-        //if (InventoryManager.instance.SelectedHasItemId("device"))
-        //{
-        //    PlayAnimations();
-        //}
+        //if (!activated && InventoryManager.instance.SelectedHasItemId("device"))
         if (!activated)
         {
             PlayAnimations();
             activated = true;
             prompt = "";
+            Invoke("End", 5f);
         }
         return true;
     }
@@ -37,14 +35,17 @@ public class LaserMachine : MonoBehaviour, IInteractable
     private void PlayAnimations()
     {
         GetComponent<Animator>().Play("LaserStart");
-        Invoke("PlayBeamAnimation", 1);
-        //laserBeam.SetActive(true);
-        //laserBeam.GetComponent<Animator>().Play("LaserBeamEmpty");
+        Invoke("PlayBeamAnimation", 1.25f);
     }
 
     private void PlayBeamAnimation()
     {
         laserBeam.SetActive(true);
         laserBeam.GetComponent<Animator>().Play("LaserBeamLoop");
+    }
+
+    private void End()
+    {
+        GetComponent<EndGame>().StartGameEnding();
     }
 }
