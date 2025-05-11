@@ -10,7 +10,7 @@ public class FootstepSystem : MonoBehaviour
     [System.Serializable]
     public class TileSound
     {
-        public List<TileBase> tiles; // Now a LIST of tiles!
+        public List<TileBase> tiles;
         public AudioClip[] footstepClips;
     }
 
@@ -51,7 +51,7 @@ public class FootstepSystem : MonoBehaviour
 
         foreach (var tileSound in tileSounds)
         {
-            if (tileSound.tiles.Contains(currentTile)) // Now checks if any tile matches
+            if (tileSound.tiles.Contains(currentTile))
             {
                 if (tileSound.footstepClips.Length > 0)
                 {
