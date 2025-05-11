@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeMachine : MonoBehaviour, IInteractable
 {
@@ -41,6 +42,7 @@ public class TimeMachine : MonoBehaviour, IInteractable
         if (portalState >= 3)
         {
             // put travelling to past here
+            SceneManager.LoadScene("PastWorld");
         }
         else
         {
