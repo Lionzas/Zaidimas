@@ -8791,6 +8791,8 @@ MonoBehaviour:
   pipes: 0
   fuel: 0
   machineManager: {fileID: 1893552544}
+  playerPosition: {x: -1, y: 0}
+  playerStorage: {fileID: 11400000, guid: e6fa4f137defa064392e837ea69ddbc1, type: 2}
 --- !u!61 &1909679929
 BoxCollider2D:
   m_ObjectHideFlags: 0

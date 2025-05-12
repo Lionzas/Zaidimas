@@ -19,6 +19,10 @@ public class TimeMachine : MonoBehaviour, IInteractable
     public bool pipes;
     public bool fuel;
     [SerializeField] private MachineManager machineManager;
+
+
+    public Vector2 playerPosition;
+    public VectorValue playerStorage;
     
     public string InteractionPrompt => prompt;
 
@@ -42,6 +46,7 @@ public class TimeMachine : MonoBehaviour, IInteractable
         if (portalState >= 3)
         {
             // put travelling to past here
+            playerStorage.initialValue = playerPosition;
             SceneManager.LoadScene("PastWorld");
         }
         else

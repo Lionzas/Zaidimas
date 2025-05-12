@@ -15,6 +15,11 @@ public class InventoryManager : MonoBehaviour
     public List<ItemData> inventoryItems = new List<ItemData>();
      public List<string> pickedUpItemIds = new List<string>();
     public List<string> consumedItemIds = new List<string>();
+
+
+    public string sceneThatTriggersReset;
+    public string targetSceneForReset;
+    private string previousSceneName;
     
 
     private void Awake()
@@ -24,6 +29,7 @@ public class InventoryManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
+            previousSceneName = SceneManager.GetActiveScene().name;
         }
         else
         {
@@ -41,8 +47,38 @@ public class InventoryManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        string currentScene = scene.name;
+
+        if (currentScene == targetSceneForReset && 
+            previousSceneName == sceneThatTriggersReset)
+        {
+            ResetInventory();
+        }
+
+        previousSceneName = currentScene;
+        
         InitializeSlots();
         RefreshInventory();
+    }
+
+
+    public void ResetInventory()
+    {
+        inventoryItems.Clear();
+        pickedUpItemIds.Clear();
+        consumedItemIds.Clear();
+        
+        selectedSlot = 0;
+        
+        if (slots != null)
+        {
+            foreach (var slot in slots)
+            {
+                if (slot != null) slot.ClearSlot();
+            }
+        }
+        
+        //Debug.Log("Inventory reset due to scene transition");
     }
     
     
