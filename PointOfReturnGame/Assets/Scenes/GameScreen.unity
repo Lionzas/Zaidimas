@@ -63590,6 +63590,8 @@ MonoBehaviour:
   inventoryItems: []
   pickedUpItemIds: []
   consumedItemIds: []
+  sceneThatTriggersReset: Base
+  targetSceneForReset: PastWorld
 --- !u!1 &1734318302
 GameObject:
   m_ObjectHideFlags: 0

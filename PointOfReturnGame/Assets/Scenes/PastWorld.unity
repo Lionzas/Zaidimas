@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: movementSound
       value: 
       objectReference: {fileID: 1377075184}
+    - target: {fileID: 854462603025822151, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: e6fa4f137defa064392e837ea69ddbc1, type: 2}
     - target: {fileID: 2088520851900857436, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: m_Name
       value: TestPlayer
@@ -157,12 +161,20 @@ PrefabInstance:
       objectReference: {fileID: 2113212754}
     - target: {fileID: 7440279949535084951, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7440279949535084951, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 11400000, guid: 35b20d11ffcf4904380aa5f3579a5d6f, type: 2}
     - target: {fileID: 7440279949535084951, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 380345498}
+    - target: {fileID: 7440279949535084951, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
+      propertyPath: currentHealth
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7794973909044900579, guid: 39bc597bb5085884e9ec2347a89fafb5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0176175
