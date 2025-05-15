@@ -33,14 +33,6 @@ public class PlayerProfile : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            ReduceHealth(15);
-        }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            RestoreHealth(15);
-        }
         if (currentHealth <= 0)
         {
             ShowDeathScreen();
