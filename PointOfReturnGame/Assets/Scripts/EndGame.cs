@@ -34,6 +34,8 @@ public class EndGame : MonoBehaviour
             yield return null;
         }
 
+        yield return new WaitForSeconds(1.5f);
+
         currentTime = 0;
         while (currentTime <= fadeoutTime / 2)
         {
