@@ -36,7 +36,6 @@ public class LaserMachine : MonoBehaviour, IInteractable
     private void PlayAnimations()
     {
         GetComponent<Animator>().Play("LaserStart");
-        Invoke("PlayBeamAnimation", 1.25f);
     }
 
     private void PlayBeamAnimation()
