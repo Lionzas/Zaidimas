@@ -21,15 +21,15 @@ public class LaserMachine : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-        //if (!activated && InventoryManager.instance.SelectedHasItemId("device"))
-        if (!activated)
-        {
-            //InventoryManager.instance.RemoveItemByIdInSlot("device");
-            PlayAnimations();
-            activated = true;
-            prompt = "";
-            Invoke("End", 5f);
-        }
+        //if (!activated)
+        if (!activated && InventoryManager.instance.SelectedHasItemId("device"))
+            {
+                InventoryManager.instance.RemoveItemByIdInSlot("device");
+                PlayAnimations();
+                activated = true;
+                prompt = "";
+                Invoke("End", 5f);
+            }
         return true;
     }
 
