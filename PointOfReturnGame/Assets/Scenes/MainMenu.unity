@@ -251,7 +251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ateities Veik\u0117jas"
+  m_text: Future character
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Praeities Veik\u0117jas"
+  m_text: Past character
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -749,6 +749,8 @@ MonoBehaviour:
     musicClip: {fileID: 8300000, guid: 9c976f65a62e8844fb117d49dc6080ae, type: 3}
   - sceneName: MainMenu
     musicClip: {fileID: 8300000, guid: 1135af3b5470598438b97431b3c4b996, type: 3}
+  - sceneName: PastWorld
+    musicClip: {fileID: 8300000, guid: 4298295c1a797a5479beba290475eb90, type: 3}
 --- !u!1 &522764204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,10 +1923,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tu esi ateities veik\u0117jas, \u012Fstrig\u0119s be pagalbos. Vienintel\u0117
-    viltis \u2013 susisiekti su praeitimi.\r\n\r\nPastatyk laiko ma\u0161in\u0105,
-    kad gautum pagalb\u0105 i\u0161 praeities.\r\n\r\nAteitis priklauso nuo tavo
-    veiksm\u0173."
+  m_text: 'You are a character from the future, stranded without help. Your only
+    hope is to contact the past.
+
+
+    Build a time machine to get help from the
+    past.
+
+
+    The future depends on your actions.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3060,7 +3067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u017Daidimo tikslas"
+  m_text: Goal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

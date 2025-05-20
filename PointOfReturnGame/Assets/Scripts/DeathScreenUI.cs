@@ -13,5 +13,12 @@ public class DeathScreenUI : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+        AudioListener.volume = 1f;
+    }
+    void OnEnable()
+    {
+
+        Time.timeScale = 0f;
+        AudioListener.volume = 0f;
     }
 }

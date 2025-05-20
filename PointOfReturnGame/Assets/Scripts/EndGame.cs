@@ -12,7 +12,31 @@ public class EndGame : MonoBehaviour
 
     public void StartGameEnding()
     {
-        StartCoroutine("Fadeout");
+        DisableAllEnemyDogs();
+        StartCoroutine(Fadeout());
+    }
+
+    private void DisableAllEnemyDogs()
+    {
+        GameObject[] allObjects = FindObjectsOfType<GameObject>();
+
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.name.StartsWith("Dog"))
+            {
+                // Stop Rigidbody2D movement
+                Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                    rb.linearVelocity = Vector2.zero;
+
+                // Disable AI/movement/attack scripts if they exist
+                var enemyAI = obj.GetComponent<EnemyController>();
+                if (enemyAI != null) enemyAI.enabled = false;
+
+                var attack = obj.GetComponent<EnemyAttack>();
+                if (attack != null) attack.enabled = false;
+            }
+        }
     }
 
     IEnumerator Fadeout()
